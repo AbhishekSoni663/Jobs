@@ -7,7 +7,7 @@ require("dotenv").config()
 const app = express()
 
 app.use(cors({
-    origin: "http://localhost:4000",
+    origin: ["http://localhost:4000", "https://job-task-app.onrender.com"],
     methods:["GET","POST","PUT","DELETE"]
 }));
 
